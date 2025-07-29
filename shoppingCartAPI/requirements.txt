@@ -1,0 +1,6 @@
+sqlparse==0.2.4
+django
+djangorestframework
+djangorestframework-simplejwt
+django-filter
+djongo
