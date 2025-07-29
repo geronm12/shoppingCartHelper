@@ -1,7 +1,3 @@
-Claro, aquí tenés una propuesta completa para el archivo README.md de tu proyecto. Este archivo es la puerta de entrada para cualquier persona (incluyéndote a vos en el futuro) que quiera entender y usar tu código.
-
-Copiá y pegá este contenido en un nuevo archivo llamado README.md en la raíz de tu proyecto (shopping-cart-helper/).
-
 Shopping Cart Helper 🛒🤖
 Este proyecto es una prueba de concepto (PoC) que implementa un sistema de herramientas (tools) para ser consumido por Modelos de Lenguaje Grandes (LLMs) como Claude o ChatGPT. Permite a un LLM interactuar de forma segura y estructurada con una base de datos de un carrito de compras a través de una API.
 
@@ -56,19 +52,15 @@ Crear y activar el entorno virtual
 Bash
 
 # Crear el entorno
-
 python -m venv .venv
 
 # Activar en Windows (PowerShell)
-
 .\.venv\Scripts\activate
 
 # Activar en Windows (cmd)
-
 .venv\Scripts\activate
 
 # Activar en Mac/Linux
-
 source .venv/bin/activate
 Instalar las dependencias
 Asegúrate de tener un archivo requirements.txt en la raíz con todas las librerías y ejecútalo.
@@ -83,30 +75,25 @@ Cómo Ejecutar
 Debes iniciar ambos servicios, cada uno en su propia terminal.
 
 1. Para ejecutar la API Backend (Django)
-   Bash
+Bash
 
 # Navegar a la carpeta del backend
-
 cd shoppingCartAPI
 
 # Aplicar las migraciones a la base de datos
-
 python manage.py migrate
 
 # Iniciar el servidor de desarrollo
-
 python manage.py runserver
 La API estará disponible en http://127.0.0.1:8000.
 
 2. Para ejecutar el Servidor MCP
-   Bash
+Bash
 
 # Navegar a la carpeta del servidor MCP
-
 cd shoppingCartMCP
 
 # Iniciar el servidor con Uvicorn
-
 uvicorn main:app --reload
 El servidor de herramientas estará disponible (generalmente también en http://127.0.0.1:8000, asegúrate de cambiar el puerto si quieres correr ambos a la vez).
 
